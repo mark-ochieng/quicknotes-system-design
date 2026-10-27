@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #1f2933;
+  background: #f4f6f8;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  color: #ffffff;
+  background: #2563eb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+form {
+  margin: 24px 0;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid #d9dee3;
+  border-radius: 8px;
+}
+
+form h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 12px 0 4px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  font: inherit;
+  border: 1px solid #b6bec7;
+  border-radius: 6px;
+}
+
+form button {
+  margin-top: 16px;
+}
+
+#status {
+  padding: 10px 12px;
+  border-left: 4px solid #6b7280;
+  background: #e5e7eb;
+  border-radius: 4px;
+}
+
+#status.loading {
+  border-left-color: #2563eb;
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
+#status.success {
+  border-left-color: #15803d;
+  background: #dcfce7;
+  color: #14532d;
+}
+
+#status.error {
+  border-left-color: #b91c1c;
+  background: #fee2e2;
+  color: #7f1d1d;
+}
+
+#notes-list {
+  padding: 0;
+  list-style: none;
+}
+
+.note {
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  background: #ffffff;
+  border: 1px solid #d9dee3;
+  border-radius: 8px;
+}
+
+.note h3 {
+  margin: 0 0 6px;
+  text-transform: capitalize;
+}
+
+.note p {
+  margin: 0 0 12px;
+}
+
+.delete-btn {
+  background: #b91c1c;
+}
+
+.delete-btn:disabled {
+  background: #9ca3af;
+}
+
+.empty {
+  padding: 16px;
+  text-align: center;
+  color: #6b7280;
+  background: #ffffff;
+  border: 1px dashed #b6bec7;
+  border-radius: 8px;
+}
